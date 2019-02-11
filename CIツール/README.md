@@ -1,0 +1,17 @@
+# CIツール
+
+## 概要  
+覚書である。順次記載予定。  
+
+### TravisCI  
+GitHub上でのCIサービス  
+
+#### travis.yml  
+  GitHub上でのCIサービス  
+
+### AppVeyor  
+OS に Windows を使っていることを特徴とした CI (継続的インテグレーション) サービス  
+ 
+#### appveyor.yml  
+  設定ファイル。  
+  リポジトリーのルートディレクトリー直下に配置。
