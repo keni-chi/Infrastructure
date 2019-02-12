@@ -1,15 +1,9 @@
-# CIツール
+# AppVeyor
 
 ## 概要  
 覚書である。順次記載予定。  
 
-### TravisCI  
-GitHub上でのCIサービス  
-
-#### travis.yml  
-  GitHub上でのCIサービス  
-
-### AppVeyor  
+### AppVeyorとは  
 OS に Windows を使っていることを特徴とした CI (継続的インテグレーション) サービス  
  
 #### appveyor.yml  
