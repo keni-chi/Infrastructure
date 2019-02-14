@@ -22,7 +22,7 @@ docker images  # 取得済みのイメージ一覧を確認
 docker run hello-world  # Hello Worldを動作   
 docker pull alpine  # alpin linuxを取得  
 docker run alpine echo "hello from alpine"  # linuxでコマンド実行  
-docker run -it alpine bin/sh   # -it 対話的に作業
+docker run -it alpine bin/sh   # -it 対話的に作業 
 
 #### コンテナ停止
 docker stop {CONTAINER ID}
@@ -55,7 +55,7 @@ docker run --name static-site2 -e AUTHOR="My second Docker" -d -p 8080:80 seqven
 - Dockerデーモンを起動してから以下のビルドを行う。  
   - docker build -t {イメージ名} .  
     // -t ビルド成功後、作成されたメッセージにリポジトリ名（とオプションタグ）を付与  
-  - docker run -p 8888:5000 --name {コンテナに割り当てる名前} {イメージ名}    
+  - docker run -p xxxx:xxxx --name {コンテナに割り当てる名前} {イメージ名}    
 
 ### イメージをpush/pull
 - push  
@@ -83,8 +83,8 @@ docker run --name static-site2 -e AUTHOR="My second Docker" -d -p 8080:80 seqven
     - image: 起動するイメージ名  
 
 - コマンド
-  - docker-compose up  //起動。「docker run -p 8888:5000 {起動するイメージ名}」と同じ意味。   
-  - ブラウザでhttp://localhost:5000にアクセス。
+  - docker-compose up  //起動。「docker run -p xxxx:xxxx {起動するイメージ名}」と同じ意味。   
+  - ブラウザでhttp://localhost:xxxxにアクセス。
   - その他コマンド例
     - ocker-compose up -d   //バックグランドで実行
     - docker-compose stop  //コンテナを停止する
