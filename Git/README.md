@@ -59,12 +59,12 @@ vimdiff {ファイルA(左)} {ファイルB(右)}
 ### gitレポジトリとhttpで通信する場合にユーザ情報の入力を省略
 ホームディレクトリに.netrcを以下内容で作成する。  
 参考文献: https://qiita.com/r-tamura/items/c6e49a3eb7f7f8aafb9d  
->machine xxxx.com
->login XXXXXXXX
->password XXXXXXX
->protocol https
+>machine xxxx.com  
+>login XXXXXXXX  
+>password XXXXXXX  
+>protocol https  
 
 ### git configの設定
-参考文献: https://note.nkmk.me/git-config-setting/
-git config user.email  # 確認  
-git config --global user.email example@example.com  # 設定
+参考文献: https://note.nkmk.me/git-config-setting/  
+git config user.email  # 確認    
+git config --global user.email example@example.com  # 設定  
