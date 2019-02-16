@@ -54,7 +54,15 @@ vimdiff {ファイルA(左)} {ファイルB(右)}
 左側のファイルを編集
 :w
 :qa
-
+  
+### pull requsetの流れ  
+1. fork  
+1. git clone   
+1. git checkout -b feature_xxx  
+1. ファイルを編集する  
+1. commit,pushする  
+1. 最新のブランチ状態をmaregeやrebaseで取り込む  
+1. merge requestを送る  
 
 ### gitレポジトリとhttpで通信する場合にユーザ情報の入力を省略
 ホームディレクトリに.netrcを以下内容で作成する。  
