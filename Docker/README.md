@@ -3,10 +3,15 @@
 ## 概要
 覚書である。順次記載予定。
 
-### 構築  
+### 構築(Windwos)  
 - Hyper-Vおよびコンテナー機能の有効化  
 - インストーラでのインストール  
 - 起動し、ログインして完了  
+
+### 構築(Mac)  
+- Hyper-Vおよびコンテナー機能の有効化  
+- インストーラでのインストール  
+- Preferences → Advancedでメモリ設定    
 
 ### dockerコマンド基本  
 
@@ -22,7 +27,7 @@ docker images  # 取得済みのイメージ一覧を確認
 docker run hello-world  # Hello Worldを動作   
 docker pull alpine  # alpin linuxを取得  
 docker run alpine echo "hello from alpine"  # linuxでコマンド実行  
-docker run -it alpine bin/sh   # -it 対話的に作業 
+docker run -it alpine bin/sh   # -it 対話的に作業
 
 #### コンテナ停止
 docker stop {CONTAINER ID}
