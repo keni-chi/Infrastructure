@@ -39,6 +39,11 @@ docker attach {CONTAINER ID}  # コンテナで起動しているPID=1のプロ�
 #### コンテナ削除
 docker rm {CONTAINER ID}  # コンテナは停止していること。削除すると、そのコンテナをstartコマンドで再開できなくなる。  
 
+#### イメージ削除  
+docker rmi {image id}  
+or  
+docker rmi {リポジトリ名}:{タグ}
+
 ### コンテナでWebサーバを動かしてみる  
 - 80   
 docker run --name static-site -e AUTHOR="Docker" -d -p 80:80 seqvence/static-site  # コンテナ立ち上げ   
