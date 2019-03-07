@@ -1,0 +1,44 @@
+PLAYBOOK: setup.yml ********************************************************************************************************************************************
+1 plays in ./setup.yml
+
+PLAY [Hello Ansible] *******************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************
+
+The authenticity of host '172.17.0.2 (172.17.0.2)' can't be established.
+ECDSA key fingerprint is SHA256:xxxxxxxxxxxxxxxxxx.
+ECDSA key fingerprint is MD5:xxxxxxxxxxxxxxxxxx.
+Are you sure you want to continue connecting (yes/no)? yes
+
+TASK [Hello server] ********************************************************************************************************************************************
+
+changed: [172.17.0.2] => {
+    "changed": true,
+    "cmd": "date >> now.txt",
+    "delta": "0:00:00.028867",
+    "end": "2019-03-07 01:28:24.475852",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "date >> now.txt",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2019-03-07 01:28:24.446985",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+META: ran handlers
+META: ran handlers
+
+PLAY RECAP *****************************************************************************************************************************************************
+172.17.0.2                 : ok=2    changed=1    unreachable=0    failed=0   
