@@ -103,7 +103,8 @@ docker run --name static-site2 -e AUTHOR="My second Docker" -d -p 8080:80 seqven
     - docker-compose down   // コンテナの停止および破棄
 
 
-```docker-compose.yml
+- docker-compose.yml(例１)
+```
 version: '3'
 services:
   {サービス名}:
@@ -112,7 +113,8 @@ services:
     - "xxx:xxx"
 ```   
 
-```docker-compose.yml
+- docker-compose.yml(例２)
+```
 version: '3'
 services:
     {サービス名1}:
