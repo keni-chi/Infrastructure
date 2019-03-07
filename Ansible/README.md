@@ -38,7 +38,7 @@ ansible-playbook ./setup.yml -v -vvvv -u root -i ./hosts
 => (実行結果が表示される）  
 
 1. 結果確認
-managed_node で  
+managed_node 側で以下の通り確認。    
 $ cat /root/now.txt  
 
 
