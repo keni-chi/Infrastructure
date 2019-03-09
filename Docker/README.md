@@ -96,7 +96,7 @@ docker run --name static-site2 -e AUTHOR="My second Docker" -d -p 8080:80 seqven
   - docker-compose up  //起動。「docker run -p xxxx:xxxx {起動するイメージ名}」と同じ意味。   
   - ブラウザでhttp://localhost:xxxxにアクセス。
   - その他コマンド例
-    - ocker-compose up -d   //バックグランドで実行
+    - docker-compose up -d   //バックグランドで実行
     - docker-compose stop  //コンテナを停止する
     - docker-compose start   //コンテナを再開
     - docker-compose start {起動するイメージ名}   //特定のコンテナを指定して開始
