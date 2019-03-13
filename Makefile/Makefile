@@ -1,6 +1,5 @@
 X := "HELLO"
 LENGTH := 3
-
 test01:
 	@echo "001----"
 	ls
@@ -14,6 +13,12 @@ test01:
 	@for i in {1..$(LENGTH)}; do \
 	        echo $$i; \
 	    done
+	@echo "006----"
 
 test02:
 	@echo "test02 echo"
+
+VAR := hoge.h hoge.cpp hogera.h hogera.cpp
+.PHONY: all
+all:
+	@echo "$(filter %.cpp,$(VAR))"
