@@ -1,7 +1,9 @@
-# shellコマンド
-# @でコマンド自身を未出力
+X := "HELLO"
+
 test01:
 	@echo "001----"
 	ls
 	@echo "002----"
 	@ls
+	@echo "003----"
+	@echo $(X)
