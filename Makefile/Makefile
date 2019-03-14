@@ -37,3 +37,9 @@ VAR := abc def ghi
 all03:
 	@echo "$(findstring xy,$(VAR))"
 	@echo "$(findstring bc,$(VAR))"
+
+
+VAR := abc def ghi
+.PHONY: all04
+all04:
+	@echo "$(firstword $(VAR))"
