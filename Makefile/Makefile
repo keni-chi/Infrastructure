@@ -22,3 +22,9 @@ VAR := hoge.h hoge.cpp hogera.h hogera.cpp
 .PHONY: all
 all:
 	@echo "$(filter %.cpp,$(VAR))"
+
+VAR := hoge.h hoge.cpp hogera.h hogera.cpp
+
+.PHONY: all02
+all02:
+	@echo "$(filter-out %.cpp,$(VAR))"	
