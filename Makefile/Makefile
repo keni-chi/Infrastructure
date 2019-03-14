@@ -15,16 +15,25 @@ test01:
 	    done
 	@echo "006----"
 
+
 test02:
 	@echo "test02 echo"
+
 
 VAR := hoge.h hoge.cpp hogera.h hogera.cpp
 .PHONY: all01
 all01:
 	@echo "$(filter %.cpp,$(VAR))"
 
-VAR := hoge.h hoge.cpp hogera.h hogera.cpp
 
+VAR := hoge.h hoge.cpp hogera.h hogera.cpp
 .PHONY: all02
 all02:
 	@echo "$(filter-out %.cpp,$(VAR))"	
+
+
+VAR := abc def ghi
+.PHONY: all03
+all03:
+	@echo "$(findstring xy,$(VAR))"
+	@echo "$(findstring bc,$(VAR))"
