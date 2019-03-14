@@ -26,6 +26,7 @@ VAR03 := abc def ghi
 VAR04 := hoge.cpp hogera.cpp
 VAR05 := hoge foo hogera fuga
 VAR06 := a b    c    d
+VAR07 := hoge.cpp hogera.cpp test.java
 
 .PHONY: all
 all:
@@ -36,7 +37,8 @@ all:
 	@echo "$(findstring bc,$(VAR03))"
 	@echo "$(firstword $(VAR03))"
 	@echo "$(lastword $(VAR03))"
-	@echo "005----"
+	@echo "006----"
 	@echo "$(patsubst %.cpp,%.o,$(VAR04))"
 	@echo "$(sort $(VAR05))"
 	@echo "$(strip $(VAR06))"
+	@echo "$(subst .cpp,.o,$(VAR07))"
