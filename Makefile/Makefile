@@ -25,6 +25,7 @@ VAR02 := hoge.h hoge.cpp hogera.h hogera.cpp
 VAR03 := abc def ghi
 VAR04 := hoge.cpp hogera.cpp
 VAR05 := hoge foo hogera fuga
+VAR06 := a b    c    d
 
 .PHONY: all
 all:
@@ -38,3 +39,4 @@ all:
 	@echo "005----"
 	@echo "$(patsubst %.cpp,%.o,$(VAR04))"
 	@echo "$(sort $(VAR05))"
+	@echo "$(strip $(VAR06))"
