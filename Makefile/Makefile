@@ -20,26 +20,17 @@ test02:
 	@echo "test02 echo"
 
 
-VAR := hoge.h hoge.cpp hogera.h hogera.cpp
-.PHONY: all01
-all01:
-	@echo "$(filter %.cpp,$(VAR))"
+VAR01 := hoge.h hoge.cpp hogera.h hogera.cpp
+VAR02 := hoge.h hoge.cpp hogera.h hogera.cpp
+VAR03 := abc def ghi
+VAR04 := abc def ghi
 
-
-VAR := hoge.h hoge.cpp hogera.h hogera.cpp
-.PHONY: all02
-all02:
-	@echo "$(filter-out %.cpp,$(VAR))"	
-
-
-VAR := abc def ghi
-.PHONY: all03
-all03:
-	@echo "$(findstring xy,$(VAR))"
-	@echo "$(findstring bc,$(VAR))"
-
-
-VAR := abc def ghi
-.PHONY: all04
-all04:
-	@echo "$(firstword $(VAR))"
+.PHONY: all
+all:
+	@echo "001----"
+	@echo "$(filter %.cpp,$(VAR01))"
+	@echo "$(filter-out %.cpp,$(VAR02))"	
+	@echo "$(findstring xy,$(VAR03))"
+	@echo "$(findstring bc,$(VAR03))"
+	@echo "$(firstword $(VAR04))"
+	@echo "005----"
