@@ -23,7 +23,6 @@ test02:
 VAR01 := hoge.h hoge.cpp hogera.h hogera.cpp
 VAR02 := hoge.h hoge.cpp hogera.h hogera.cpp
 VAR03 := abc def ghi
-VAR04 := abc def ghi
 
 .PHONY: all
 all:
@@ -32,5 +31,6 @@ all:
 	@echo "$(filter-out %.cpp,$(VAR02))"	
 	@echo "$(findstring xy,$(VAR03))"
 	@echo "$(findstring bc,$(VAR03))"
-	@echo "$(firstword $(VAR04))"
+	@echo "$(firstword $(VAR03))"
+	@echo "$(lastword $(VAR03))"
 	@echo "005----"
