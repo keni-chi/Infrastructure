@@ -19,8 +19,8 @@ test02:
 	@echo "test02 echo"
 
 VAR := hoge.h hoge.cpp hogera.h hogera.cpp
-.PHONY: all
-all:
+.PHONY: all01
+all01:
 	@echo "$(filter %.cpp,$(VAR))"
 
 VAR := hoge.h hoge.cpp hogera.h hogera.cpp
