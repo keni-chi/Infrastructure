@@ -23,6 +23,7 @@ test02:
 VAR01 := hoge.h hoge.cpp hogera.h hogera.cpp
 VAR02 := hoge.h hoge.cpp hogera.h hogera.cpp
 VAR03 := abc def ghi
+VAR04 := hoge.cpp hogera.cpp
 
 .PHONY: all
 all:
@@ -34,3 +35,4 @@ all:
 	@echo "$(firstword $(VAR03))"
 	@echo "$(lastword $(VAR03))"
 	@echo "005----"
+	@echo "$(patsubst %.cpp,%.o,$(VAR04))"
