@@ -64,3 +64,5 @@ all:
 	@echo "$(join $(VAR11),$(VAR12))"
 	@echo "$(notdir $(VAR10))"
 	@echo "$(realpath $(VAR08))"
+	@echo "020----"
+	@echo "$(suffix $(VAR10))"
