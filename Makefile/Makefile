@@ -72,3 +72,6 @@ all:
 	@echo "$(and $(VAR14),$(VAR15),$(VAR16))"
 	@echo "$(and $(VAR14),$(EMPTY),$(VAR16))"
 	@echo "$(and $(VAR16),$(VAR15),$(VAR14))"
+	@echo "023----"
+	@echo "$(if $(VAR14),$(VAR15),$(VAR16))"
+	@echo "$(if $(EMPTY),$(VAR15),$(VAR16))"
