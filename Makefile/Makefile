@@ -66,3 +66,5 @@ all:
 	@echo "$(realpath $(VAR08))"
 	@echo "020----"
 	@echo "$(suffix $(VAR10))"
+	@echo "021----"
+	@echo "$(wildcard $(VAR13))"
