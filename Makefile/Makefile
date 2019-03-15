@@ -68,3 +68,7 @@ all:
 	@echo "$(suffix $(VAR10))"
 	@echo "021----"
 	@echo "$(wildcard $(VAR13))"
+	@echo "022----"
+	@echo "$(and $(VAR14),$(VAR15),$(VAR16))"
+	@echo "$(and $(VAR14),$(EMPTY),$(VAR16))"
+	@echo "$(and $(VAR16),$(VAR15),$(VAR14))"
