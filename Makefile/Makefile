@@ -92,7 +92,16 @@ all:
 	@echo "$(shell ls)"
 
 rule:
-	@echo "00----"	
+	@echo "rule----"	
 	$(eval F := $(shell seq 10))
 	@echo "start----"	
 	@echo $(F)
+
+a:
+	@echo "a----"	
+	$(eval A := $(shell date))
+	@echo "set A"
+
+b: a
+	@echo "b----"	
+	@echo $(A)
