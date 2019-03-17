@@ -29,6 +29,7 @@ test01:
 	@cd test; pwd
 	@echo "007----"
 	cd test && echo $(X)
+	@echo "008----"
 
 
 test02:
