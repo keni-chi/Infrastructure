@@ -90,3 +90,9 @@ all:
 	$(call MACRO,c,d)
 	@echo "026----"	
 	@echo "$(shell ls)"
+
+rule:
+	@echo "00----"	
+	$(eval F := $(shell seq 10))
+	@echo "start----"	
+	@echo $(F)
