@@ -1,5 +1,16 @@
 X := "HELLO"
 LENGTH := 3
+Y := ""
+
+ifdef MY_ENV01
+    $(error "(from ifdef to ifndef) please define MY_ENV01")
+endif
+
+ifdef MY_ENV02
+    $(error "please not define MY_ENV02")
+endif
+
+
 test01:
 	@echo "001----"
 	ls
