@@ -26,7 +26,8 @@ test01:
 	        echo $$i; \
 	    done
 	@echo "006----"
-
+	@cd test; pwd
+	@echo "007----"
 
 test02:
 	@echo "test02 echo"
