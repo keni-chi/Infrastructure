@@ -7,6 +7,7 @@ test01:
 	@ls
 	@echo "003----"
 	@echo $(X)
+	@echo $(Y)
 	@echo "004----"
 	@make test02
 	@echo "005----"

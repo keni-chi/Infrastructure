@@ -6,6 +6,7 @@
 ### コマンド
 make test01  
 make test01 X=a  
+make test01 X=e Y=g  
 
 ## 参考
 [Makefile1](https://qiita.com/petitviolet/items/a1da23221968ee86193b)
