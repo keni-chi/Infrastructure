@@ -36,6 +36,10 @@ VAR13 := ./tmp/*.cpp ./*.md
 VAR14 := abc
 VAR15 := def
 VAR16 := ghi
+VAR17 = "var $1 $2"
+define MACRO
+    @echo "macro $1 $2"
+endef
 
 .PHONY: all
 all:
@@ -81,3 +85,8 @@ all:
 	@echo "$(or $(EMPTY),$(EMPTY),$(EMPTY))"
 	@echo "$(or $(VAR16),$(VAR15),$(VAR14))"
 	@echo "025----"	
+	@echo "$(call VAR17,a,b)"
+	$(call MACRO,a,b)
+	$(call MACRO,c,d)
+	@echo "026----"	
+	@echo "$(shell ls)"
