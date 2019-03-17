@@ -31,6 +31,7 @@ test01:
 	cd test && echo $(X)
 	@echo "008----"
 	$(eval F := "abc")
+	@cd test && echo $(F)
 
 
 test02:
