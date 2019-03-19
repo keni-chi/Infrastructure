@@ -28,8 +28,9 @@ ls > output.txt
 
 ### ls
 - ディレクトリのみ   
-ls -F | grep /
-
+ls -F | grep /  
+- ファイルのみ  
+ls -F | grep -v /  
 
 ## 参考
 [find/grep](https://qiita.com/pokari_dz/items/0f14a21e3ca3df025d21)
