@@ -22,6 +22,8 @@ exit
 - grep  
   grep [検索したい文字列] -rl [検索対象フォルダのパス]  
 
+### .shを実行可能にする
+chmod +x xxxx.sh  
 
 ## 参考
 [find/grep](https://qiita.com/pokari_dz/items/0f14a21e3ca3df025d21)
