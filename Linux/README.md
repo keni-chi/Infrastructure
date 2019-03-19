@@ -27,7 +27,8 @@ chmod +x xxxx.sh
 ls > output.txt  
 
 ### ls
-
+- ディレクトリのみ   
+ls -F | grep /
 
 
 ## 参考
