@@ -26,5 +26,9 @@ chmod +x xxxx.sh
 ### ファイル出力
 ls > output.txt  
 
+### ls
+
+
+
 ## 参考
 [find/grep](https://qiita.com/pokari_dz/items/0f14a21e3ca3df025d21)
