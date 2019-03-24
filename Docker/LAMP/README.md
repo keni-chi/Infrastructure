@@ -3,7 +3,6 @@
 ## 概要
 覚書である。順次記載予定。
 
-
 ### 構築手順
 Debian系のディストリビューション（DebianやUbuntu）。(apt-get)
 
@@ -15,9 +14,13 @@ Dockerfileの書き換え
 docker-compose.ymlの書き換え
   phpmyadmin部分を追加
 docker-compose up -d
+```
+
+### 動作確認
 以下にアクセスして確認。
-  http://localhost
-  http://localhost:8080
+```
+http://localhost
+http://localhost:8080
 ```
 
 ### MySQLメモ
