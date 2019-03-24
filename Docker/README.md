@@ -100,7 +100,9 @@ docker run --name static-site2 -e AUTHOR="My second Docker" -d -p 8080:80 seqven
     - docker-compose stop  //コンテナを停止する
     - docker-compose start   //コンテナを再開
     - docker-compose start {起動するイメージ名}   //特定のコンテナを指定して開始
-    - docker-compose down   // コンテナの停止および破棄
+    - docker-compose down   // コンテナの停止および破棄（コンテナ・ネットワーク）
+    - docker-compose down --rmi all   //停止＆削除（コンテナ・ネットワーク・イメージ）
+    - docker-compose down -v  // 停止＆削除（コンテナ・ネットワーク・ボリューム）
 
 
 - docker-compose.yml(例１)
