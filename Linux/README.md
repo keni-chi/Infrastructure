@@ -32,5 +32,10 @@ ls -F | grep /
 - ファイルのみ  
 ls -F | grep -v /  
 
+### sed
+echo 'before before before text' | sed 's/before/after/g'
+
+
 ## 参考
-[find/grep](https://qiita.com/pokari_dz/items/0f14a21e3ca3df025d21)
+[find/grep](https://qiita.com/pokari_dz/items/0f14a21e3ca3df025d21)  
+[sed](https://qiita.com/muran001/items/472abcfc353d5df7b77a)
