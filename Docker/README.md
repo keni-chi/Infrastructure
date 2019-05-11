@@ -149,6 +149,27 @@ networks:
     {back}:
 ```   
 
+### Hub
+docker login
+
+docker-compose up -d --build
+
+docker build -t [Dockerhubユーザ名]/python_env .
+docker images
+docker push [Dockerhubユーザ名]/python_env
+登録された事を確認
+docker-compose down --rmi all
+
+pull用のディレクトリへ移動
+Dockerfile作成
+docker build -t [Dockerhubユーザ名]/python_env .
+docker run -it [Dockerhubユーザ名]/python_env bin/sh
+exit
+docker run -it [Dockerhubユーザ名]/python_env bash
+pip install numpy
+exit
+docker push [Dockerhubユーザ名]/python_env
+
 
 ## 参考  
 構築:  
@@ -157,4 +178,7 @@ networks:
 [【備忘録】Docker for Windows インストール１](https://qiita.com/manamiTakada/items/c1394e5e3358802a9446)  
 [さわって理解するDocker入門](https://www.ogis-ri.co.jp/otc/hiroba/technical/docker/part1.html)  
 [Docker Compose - docker-compose.yml リファレンス](https://qiita.com/zembutsu/items/9e9d80e05e36e882caaa)  
-[いまさらDockerに入門したので分かりやすくまとめます](https://qiita.com/gold-kou/items/44860fbda1a34a001fc1)
+[いまさらDockerに入門したので分かりやすくまとめます](https://qiita.com/gold-kou/items/44860fbda1a34a001fc1)  
+[Docker Hubの使い方とGitHubからのDockerイメージ自動ビルド](https://www.atmarkit.co.jp/ait/articles/1408/26/news038.html)  
+[Dockerhubへの初プッシュ](https://qiita.com/moru3/items/32931813db81d891effb)  
+[dockerで簡易にpython3の環境を作ってみる](https://qiita.com/reflet/items/4b3f91661a54ec70a7dc)  
