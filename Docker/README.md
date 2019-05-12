@@ -149,7 +149,7 @@ networks:
     {back}:
 ```   
 
-### Hub
+### DockerHub
 docker login
 
 docker-compose up -d --build
