@@ -154,21 +154,21 @@ docker login
 
 docker-compose up -d --build
 
-docker build -t [Dockerhubユーザ名]/python_env .
-docker images
-docker push [Dockerhubユーザ名]/python_env
-登録された事を確認
-docker-compose down --rmi all
+docker build -t [Dockerhubユーザ名]/python_env .  
+docker images  
+docker push [Dockerhubユーザ名]/python_env  
+登録された事を確認  
+docker-compose down --rmi all  
 
-pull用のディレクトリへ移動
-Dockerfile作成
-docker build -t [Dockerhubユーザ名]/python_env .
-docker run -it [Dockerhubユーザ名]/python_env bin/sh
-exit
-docker run -it [Dockerhubユーザ名]/python_env bash
-pip install numpy
-exit
-docker push [Dockerhubユーザ名]/python_env
+pull用のディレクトリへ移動  
+Dockerfile作成  
+docker build -t [Dockerhubユーザ名]/python_env .  
+docker run -it [Dockerhubユーザ名]/python_env bin/sh  
+exit  
+docker run -it [Dockerhubユーザ名]/python_env bash  
+pip install numpy  
+exit  
+docker push [Dockerhubユーザ名]/python_env  
 
 
 ## 参考  
