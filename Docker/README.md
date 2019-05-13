@@ -171,6 +171,16 @@ exit
 docker push [Dockerhubユーザ名]/python_env  
 
 
+### コンテナ間通信
+docker run -d -p 25525:80 --name nginx_test nginx
+docker run -it --link nginx_test:nginx ubuntu:14.04
+env | grep NGINX
+cat /ect/hosts | grep nginx
+ping nginx
+apt-get update && apt-get install -y curl
+curl nginx
+
+
 ## 参考  
 構築:  
 [Docker for WindowsをWindows10 Proにインストール](https://qiita.com/anikundesu/items/7ecf20b7e8a60f8439a8)  
@@ -182,3 +192,4 @@ docker push [Dockerhubユーザ名]/python_env
 [Docker Hubの使い方とGitHubからのDockerイメージ自動ビルド](https://www.atmarkit.co.jp/ait/articles/1408/26/news038.html)  
 [Dockerhubへの初プッシュ](https://qiita.com/moru3/items/32931813db81d891effb)  
 [dockerで簡易にpython3の環境を作ってみる](https://qiita.com/reflet/items/4b3f91661a54ec70a7dc)  
+[Docker container間の連携について](https://qiita.com/taka4sato/items/b1bf33941a1ec8b69fd2)

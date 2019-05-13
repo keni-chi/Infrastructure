@@ -43,4 +43,5 @@ $ cat /root/now.txt
 
 
 ## 参考
-[Ansibleの導入と簡単な使い方](https://qiita.com/nekonoprotocol/items/78884242064cdaf9f472)
+[Ansibleの導入と簡単な使い方](https://qiita.com/nekonoprotocol/items/78884242064cdaf9f472)  
+[Docker + Ansible で Hello World!](https://qiita.com/mdew150/items/19a11a5cfb45e7c82c97)  
