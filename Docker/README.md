@@ -172,13 +172,13 @@ docker push [Dockerhubユーザ名]/python_env
 
 
 ### コンテナ間通信
-docker run -d -p 25525:80 --name nginx_test nginx
-docker run -it --link nginx_test:nginx ubuntu:14.04
-env | grep NGINX
-cat /ect/hosts | grep nginx
-ping nginx
-apt-get update && apt-get install -y curl
-curl nginx
+docker run -d -p 25525:80 --name nginx_test nginx  
+docker run -it --link nginx_test:nginx ubuntu:14.04  
+env | grep NGINX  
+cat /ect/hosts | grep nginx  
+ping nginx  
+apt-get update && apt-get install -y curl  
+curl nginx  
 
 
 ## 参考  
