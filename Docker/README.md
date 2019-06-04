@@ -180,6 +180,12 @@ ping nginx
 apt-get update && apt-get install -y curl  
 curl nginx  
 
+### 容量削減
+sudo du -h /var/lib/docker/image/overlay2/  
+sudo du -h --max-depth 2 /  
+sudo du -h --max-depth 1 /var/lib/docker/overlay2  
+docker system prune -a  
+
 
 ## 参考  
 構築:  
