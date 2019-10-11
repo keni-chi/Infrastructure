@@ -201,3 +201,7 @@ docker system prune -a
 [Docker container間の連携について](https://qiita.com/taka4sato/items/b1bf33941a1ec8b69fd2)  
 [【Docker】これは役に立つ!! docker-compose.ymlの例まとめ](https://qiita.com/okamu_/items/1c8e5fde742ca165fa12)  
 [Dockerfileを書いてみる](https://qiita.com/nl0_blu/items/1de829288db2670276e8)
+
+ライフサイクル
+[Docker ライフサイクル 概要図 ＆ 環境複製手順](https://qiita.com/TakahiRoyte/items/39dcf18da0ef2d1fe8b0)  
+[Docker入門 コンテナのライフサイクル](https://qiita.com/mtakehara21/items/08b6a3f0a7b44588ed94)  
