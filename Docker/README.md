@@ -188,7 +188,7 @@ docker system prune -a
 
 
 ## 参考  
-構築:  
+- 構築  
 [Docker for WindowsをWindows10 Proにインストール](https://qiita.com/anikundesu/items/7ecf20b7e8a60f8439a8)  
 [Windows10 Pro上でHyper-Vコンテナーを使い始める手順](https://qiita.com/anikundesu/items/90a7706b434daed5e266)  
 [【備忘録】Docker for Windows インストール１](https://qiita.com/manamiTakada/items/c1394e5e3358802a9446)  
@@ -202,6 +202,10 @@ docker system prune -a
 [【Docker】これは役に立つ!! docker-compose.ymlの例まとめ](https://qiita.com/okamu_/items/1c8e5fde742ca165fa12)  
 [Dockerfileを書いてみる](https://qiita.com/nl0_blu/items/1de829288db2670276e8)
 
-ライフサイクル
+- ライフサイクル
 [Docker ライフサイクル 概要図 ＆ 環境複製手順](https://qiita.com/TakahiRoyte/items/39dcf18da0ef2d1fe8b0)  
 [Docker入門 コンテナのライフサイクル](https://qiita.com/mtakehara21/items/08b6a3f0a7b44588ed94)  
+
+- pod
+[k8s pod 概要について自習ノート](https://qiita.com/MahoTakara/items/f5130bb6e9e493c46c6b)　　
+[Docker（コンテナ型仮想化）と Kubernetes についての簡単な紹介](https://ubiteku.oinker.me/2017/02/21/docker-and-kubernetes-intro/)  
