@@ -209,3 +209,10 @@ docker system prune -a
 - pod
 [k8s pod 概要について自習ノート](https://qiita.com/MahoTakara/items/f5130bb6e9e493c46c6b)　　
 [Docker（コンテナ型仮想化）と Kubernetes についての簡単な紹介](https://ubiteku.oinker.me/2017/02/21/docker-and-kubernetes-intro/)  
+
+- デプロイ
+[デプロイ / リリース 手法 まとめ](https://garafu.blogspot.com/2018/11/release-strategy.html)
+
+- ネットワーク
+[Docker network 概論](https://qiita.com/TsutomuNakamura/items/ed046ee21caca4a2ffd9)  
+[【docker】2つのdocker-composeを同一ネットワークにする](https://o21o21.hatenablog.jp/entry/docker-compose-networks-create)  
