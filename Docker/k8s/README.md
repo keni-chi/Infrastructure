@@ -4,7 +4,7 @@
 覚書である。順次記載予定。
 
 
-
+### メモ
 - ダッシュボードを起動
 kubectl get pod --namespace=kube-system -l k8s-app=kubernetes-dashboard
 
@@ -36,6 +36,7 @@ kubectl delete pod hello-world
 kubectl run test -it --restart=Never --image=busybox sh
 wget -O - http://web-service
 
+
 ----
 pending問題
 
@@ -64,12 +65,7 @@ ROCEKT.CHATのポッド起動 kubectl apply -f deploy-rocket.yml
 起動状態の確認 kubectl get -f deploy-rocket.yml
 ROCEKT.CHATのサービス作成 kubectl apply -f svc-rocket.yml
 サービスの作成状態確認 kubectl get -f svc-rocket.yml
-
 http://localhost:31000/
-
-
-
-
 
 
 ## 参考
