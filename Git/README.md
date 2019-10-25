@@ -1,12 +1,12 @@
 # Git
 
 ## 概要
-Gitコマンドについて以下に示す。
+Gitコマンドについて以下に示す。  
 
 ### コミット
 git add .  
 git commit -m "{コメント}"  
-git push origin {ブランチ名}
+git push origin {ブランチ名}  
 
 ### リセット
 git reset --hard origin/{ブランチ名}
@@ -35,25 +35,25 @@ git commit -m "{コメント}"
 git push origin {ブランチ名}  
 
 ### ブランチ削除
-git branch -d {ブランチ名}  
+git branch -d {ブランチ名}    
 git push origin :{ブランチ名}  
 
 ### git pushの削除  
-git reset --soft "HEAD^"
+git reset --soft "HEAD^"  
 git push -f origin master  
 
 ### git log確認
 git log --oneline  
 
 ### diff確認  
-vimdiff {ファイルA(左)} {ファイルB(右)}
-ファイルは、カレントファイル、./での相対パス、絶対パスで指定する。
-- 保存せずに終了。
-:qa!
-- 保存して終了。
-左側のファイルを編集
-:w
-:qa
+vimdiff {ファイルA(左)} {ファイルB(右)}  
+ファイルは、カレントファイル、./での相対パス、絶対パスで指定する。  
+- 保存せずに終了。  
+:qa!  
+- 保存して終了。  
+左側のファイルを編集  
+:w  
+:qa  
   
 ### pull requsetの流れ  
 1. fork  
