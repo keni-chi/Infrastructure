@@ -37,24 +37,24 @@ kubectl run test -it --restart=Never --image=busybox sh
 wget -O - http://web-service
 
 
-===================
-pending問題
+pending問題------
 
 永続ボリュームの作成 kubectl apply -f pvc.yml
 リスト表示 kubectl get pvc
 永続ボリュームの表示 kubectl get pv
 ストレージクラスの表示 kubectl get storageclass
-ストレージクラスの詳細 kubectl describe storageclass
+ストレージクラスの詳細 kubectl describe storageclass  
 
-
-MongoDBの起動 kubectl apply -f mongodb.yml
+  
+MongoDBの起動 kubectl apply -f mongodb.yml  
 ポッドの起動状態の確認 kubectl get pod
 ポッドのIPアドレスを表示 kubectl get pod -o wide
 デプロイメントの確認 kubectl get deploy
 起動失敗時の原因調査1 kubectl logs POD-NAME
 起動失敗時の原因調査2 Kubectl describe pod POD-NAME
 起動失敗時の原因調査3 kubectl get events
-===================
+
+
 
 
 kubectl apply -f svc-mongodb.yml 
@@ -68,7 +68,7 @@ ROCEKT.CHATのサービス作成 kubectl apply -f svc-rocket.yml
 http://localhost:31000/
 
 ----
-- 道場
+- 道場  
 - 2
 users
 sudo chown -R {user} /usr/local/share/man/man3
