@@ -5,11 +5,11 @@
 
 
 ### メモ
-- ダッシュボードを起動
+- ダッシュボードを起動  
 kubectl get pod --namespace=kube-system -l k8s-app=kubernetes-dashboard
 
 
-- ハンズオン
+- ハンズオン  
 kubectl run hello-world --image=hello-world -it --restart=Never
 kubectl delete pod hello-world 
 
