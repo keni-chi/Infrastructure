@@ -14,10 +14,10 @@ kubectl run hello-world --image=hello-world -it --restart=Never
 kubectl delete pod hello-world 
 
 
-ポッドを生成 kubectl apply -f pod.yml
-リスト表示 kubectl get pod
-ポッドの詳細表示 kubectl describe pod NAME
-ポッドの削除 kubectl delete pod NAME
+ポッドを生成 kubectl apply -f pod.yml  
+リスト表示 kubectl get pod  
+ポッドの詳細表示 kubectl describe pod NAME  
+ポッドの削除 kubectl delete pod NAME  
 
 
 デプロイメントの生成 kubectl apply -f deploy.yml
