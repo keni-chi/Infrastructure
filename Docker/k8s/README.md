@@ -57,7 +57,7 @@ MongoDBの起動 kubectl apply -f mongodb.yml
 
 
 
-kubectl apply -f svc-mongodb.yml 
+kubectl apply -f svc-mongodb.yml  
 kubectl get svc
 
 
