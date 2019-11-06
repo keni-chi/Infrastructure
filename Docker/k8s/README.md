@@ -61,11 +61,15 @@ kubectl apply -f svc-mongodb.yml
 kubectl get svc
 
 
-ROCEKT.CHATのポッド起動 kubectl apply -f deploy-rocket.yml
-起動状態の確認 kubectl get -f deploy-rocket.yml
-ROCEKT.CHATのサービス作成 kubectl apply -f svc-rocket.yml
-サービスの作成状態確認 kubectl get -f svc-rocket.yml
-http://localhost:31000/
+ROCEKT.CHATのポッド起動  
+kubectl apply -f deploy-rocket.yml  
+起動状態の確認  
+kubectl get -f deploy-rocket.yml  
+ROCEKT.CHATのサービス作成  
+kubectl apply -f svc-rocket.yml  
+サービスの作成状態確認  
+kubectl get -f svc-rocket.yml  
+http://localhost:31000/  
 
 ----
 - 道場  
