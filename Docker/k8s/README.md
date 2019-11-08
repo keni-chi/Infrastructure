@@ -20,10 +20,10 @@ kubectl delete pod hello-world
 ポッドの削除 kubectl delete pod NAME  
 
 
-デプロイメントの生成 kubectl apply -f deploy.yml
-リスト表示 kubectl get deploy
-詳細表示 kubectl describe deploy web-deploy
-デプロイメントの削除 kubectl delete deploy web-deploy
+デプロイメントの生成 kubectl apply -f deploy.yml  
+リスト表示 kubectl get deploy  
+詳細表示 kubectl describe deploy web-deploy  
+デプロイメントの削除 kubectl delete deploy web-deploy  
 
 
 サービスの生成 kubectl apply -f service.yml
