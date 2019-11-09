@@ -32,18 +32,18 @@ kubectl delete pod hello-world
 負荷分散対象ポッドのリスト kubectl get po -l app=web
 
 
-ポッドに対話シェルを起動して、サービス経由でポッドのNginxへアクセス
+ポッドに対話シェルを起動して、サービス経由でポッドのNginxへアクセス  
 kubectl run test -it --restart=Never --image=busybox sh
 wget -O - http://web-service
 
 
 pending問題------
 
-永続ボリュームの作成 kubectl apply -f pvc.yml
-リスト表示 kubectl get pvc
-永続ボリュームの表示 kubectl get pv
-ストレージクラスの表示 kubectl get storageclass
-ストレージクラスの詳細 kubectl describe storageclass  
+永続ボリュームの作成 kubectl apply -f pvc.yml  
+リスト表示 kubectl get pvc  
+永続ボリュームの表示 kubectl get pv  
+ストレージクラスの表示 kubectl get storageclass  
+ストレージクラスの詳細 kubectl describe storageclass   
 
   
 MongoDBの起動 kubectl apply -f mongodb.yml  
@@ -80,6 +80,20 @@ sudo chmod -R 777 /usr/local/
 brew install kubernetes-cli
 
 
+## minikube  
+virtualbox install  
+minikube install  
+minikube start --vm-driver=virtualbox  
+kubectl create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.10  
+kubectl expose deployment hello-minikube --type=NodePort --port=8080  
+kubectl get pod  
+minikube service hello-minikube --url  
+
+kubectl delete services hello-minikube  
+kubectl delete deployment hello-minikube  
+minikube stop  
+minikube delete  
+
 
 
 ## 参考
@@ -87,3 +101,5 @@ brew install kubernetes-cli
 [Kubernetesハンズオン](https://www.nic.ad.jp/ja/materials/iw/2018/proceedings/h2/h2-takara-4.pdf)  
 [Kubernetes道場について](https://cstoku.dev/posts/2018/k8sdojo-01/)  
 [チュートリアル](https://kubernetes.io/ja/docs/tutorials/)  
+[minikube(ja)](https://kubernetes.io/ja/docs/setup/minikube/)  
+[minikube(en)](https://kubernetes.io/docs/setup/learning-environment/minikube/)
