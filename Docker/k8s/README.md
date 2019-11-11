@@ -97,7 +97,7 @@ minikube delete
 
 
 ## 参考
-[独学Kubernetes　コンテナ開発の基本を最速で理解する](https://qiita.com/Brutus/items/d19af6b9c55de93663f6)  
+[独学Kubernetesコンテナ開発の基本を最速で理解する](https://qiita.com/Brutus/items/d19af6b9c55de93663f6)  
 [Kubernetesハンズオン](https://www.nic.ad.jp/ja/materials/iw/2018/proceedings/h2/h2-takara-4.pdf)  
 [Kubernetes道場について](https://cstoku.dev/posts/2018/k8sdojo-01/)  
 [チュートリアル](https://kubernetes.io/ja/docs/tutorials/)  
