@@ -47,14 +47,12 @@ pending問題------
 
   
 MongoDBの起動 kubectl apply -f mongodb.yml  
-ポッドの起動状態の確認 kubectl get pod
-ポッドのIPアドレスを表示 kubectl get pod -o wide
-デプロイメントの確認 kubectl get deploy
-起動失敗時の原因調査1 kubectl logs POD-NAME
-起動失敗時の原因調査2 Kubectl describe pod POD-NAME
-起動失敗時の原因調査3 kubectl get events
-
-
+ポッドの起動状態の確認 kubectl get pod  
+ポッドのIPアドレスを表示 kubectl get pod -o wide  
+デプロイメントの確認 kubectl get deploy  
+起動失敗時の原因調査1 kubectl logs POD-NAME  
+起動失敗時の原因調査2 Kubectl describe pod POD-NAME  
+起動失敗時の原因調査3 kubectl get events  
 
 
 kubectl apply -f svc-mongodb.yml  
