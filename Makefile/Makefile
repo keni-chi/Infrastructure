@@ -125,3 +125,10 @@ a:
 b: a
 	@echo "b----"	
 	@echo $(A)
+
+
+x1 := 1 2 3
+c:
+	@for i in $(x1); do\
+		echo $$i;\
+	done
