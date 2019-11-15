@@ -206,9 +206,9 @@ docker system prune -a
 [Docker ライフサイクル 概要図 ＆ 環境複製手順](https://qiita.com/TakahiRoyte/items/39dcf18da0ef2d1fe8b0)  
 [Docker入門 コンテナのライフサイクル](https://qiita.com/mtakehara21/items/08b6a3f0a7b44588ed94)  
 
-- pod
-[k8s pod 概要について自習ノート](https://qiita.com/MahoTakara/items/f5130bb6e9e493c46c6b)　　
-[Docker（コンテナ型仮想化）と Kubernetes についての簡単な紹介](https://ubiteku.oinker.me/2017/02/21/docker-and-kubernetes-intro/)  
+- pod  
+[k8s pod 概要について自習ノート](https://qiita.com/MahoTakara/items/f5130bb6e9e493c46c6b)  
+[Docker（コンテナ型仮想化）と Kubernetes についての簡単な紹介](https://ubiteku.oinker.me/2017/02/21/docker-and-kubernetes-intro/)   
 
 - デプロイ
 [デプロイ / リリース 手法 まとめ](https://garafu.blogspot.com/2018/11/release-strategy.html)
