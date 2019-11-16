@@ -3,15 +3,18 @@
 ## 概要
 覚書である。順次記載予定。
 
+
 ### 構築(Windwos)  
 - Hyper-Vおよびコンテナー機能の有効化  
 - インストーラでのインストール  
 - 起動し、ログインして完了  
 
+
 ### 構築(Mac)  
 - Hyper-Vおよびコンテナー機能の有効化  
 - インストーラでのインストール  
 - Preferences → Advancedでメモリ設定    
+
 
 ### dockerコマンド基本  
 
@@ -44,6 +47,7 @@ docker rmi {image id}
 or  
 docker rmi {リポジトリ名}:{タグ}
 
+
 ### コンテナでWebサーバを動かしてみる  
 - 80   
 docker run --name static-site -e AUTHOR="Docker" -d -p 80:80 seqvence/static-site  # コンテナ立ち上げ   
@@ -52,6 +56,7 @@ docker run --name static-site -e AUTHOR="Docker" -d -p 80:80 seqvence/static-sit
 - 8080   
 docker run --name static-site2 -e AUTHOR="My second Docker" -d -p 8080:80 seqvence/static-site  # コンテナ立ち上げ     
 ブラウザでhttp://localhost:8080 にアクセス。  
+
 
 ### イメージのビルド
 - Dockerfile  
@@ -66,6 +71,7 @@ docker run --name static-site2 -e AUTHOR="My second Docker" -d -p 8080:80 seqven
   - docker build -t {イメージ名} .  
     // -t ビルド成功後、作成されたメッセージにリポジトリ名（とオプションタグ）を付与  
   - docker run -p xxxx:xxxx --name {コンテナに割り当てる名前} {イメージ名}    
+
 
 ### イメージをpush/pull
 - push  
@@ -82,6 +88,7 @@ docker run --name static-site2 -e AUTHOR="My second Docker" -d -p 8080:80 seqven
 
 - pull  
   - docker pull {別名}  
+
 
 ### Docker Compose
 - docker-compose.yml   
@@ -179,6 +186,7 @@ cat /ect/hosts | grep nginx
 ping nginx  
 apt-get update && apt-get install -y curl  
 curl nginx  
+
 
 ### 容量削減
 sudo du -h /var/lib/docker/image/overlay2/  
