@@ -4,8 +4,8 @@
 覚書である。順次記載予定。
 
 ### コマンド
-公式のdocker-compose.ymlを使う。
-sed -i -e 's/\/srv\/docker\/gitlab/\.\/srv\/docker\/gitlab/g' docker-compose.yml
+公式のdocker-compose.ymlを使う。  
+sed -i -e 's/\/srv\/docker\/gitlab/\.\/srv\/docker\/gitlab/g' docker-compose.yml  
 docker-compose up -d  
 http://localhost:10080  
 
