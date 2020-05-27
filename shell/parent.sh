@@ -1,9 +1,9 @@
 #!/bin/bash
 
 MSG=`./child.sh`
+echo '---'
 echo $MSG
 
-echo '---'
 sleep 2
 echo '----'
 

@@ -11,6 +11,7 @@ abc ## エラーでもそのまま実行
 cd a
 echo "test" >> output2.txt
 python child.py
+eval python child.py
 
 
 echo "===001"
@@ -28,4 +29,5 @@ echo "===004"
 rm -rf test.program
 git clone https://github.com/keni-chi/test.program.git
 echo "===005"
+docker run hello-world
 rm -rf test.program
