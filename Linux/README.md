@@ -36,6 +36,15 @@ ls -F | grep -v /
 echo 'before before before text' | sed 's/before/after/g'
 
 
+### windows10にて
+ps起動を管理者で起動  
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+虫眼鏡からubuntuアプリを起動
+
+VScodeでremote wslをインストール
+左下から操作して接続
+
+
 ## 参考
 [find/grep](https://qiita.com/pokari_dz/items/0f14a21e3ca3df025d21)  
 [sed](https://qiita.com/muran001/items/472abcfc353d5df7b77a)
