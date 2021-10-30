@@ -76,3 +76,7 @@ vimdiff {ファイルA(左)} {ファイルB(右)}
 参考文献: https://note.nkmk.me/git-config-setting/  
 git config user.email  # 確認    
 git config --global user.email example@example.com  # 設定  
+
+
+## 参考
+[GitHubがパスワード認証を廃止するらしいので](https://qiita.com/shiro01/items/e886aa1e4beb404f9038)  
