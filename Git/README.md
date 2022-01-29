@@ -77,6 +77,10 @@ vimdiff {ファイルA(左)} {ファイルB(右)}
 git config user.email  # 確認    
 git config --global user.email example@example.com  # 設定  
 
+## SSH
+ssh-keygen -t ed25519
+→C:\Users\{username}\.ssh　に生成される公開鍵をコピー
+githubにログインして貼り付け
 
 ## 参考
 [GitHubがパスワード認証を廃止するらしいので](https://qiita.com/shiro01/items/e886aa1e4beb404f9038)  
